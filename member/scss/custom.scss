@@ -1,0 +1,89 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/card";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+.sidebar {
+    background: transparent;
+    border-right: 0;
+    box-shadow: 0 0 2rem 0 rgb(0 0 0 / 5%);
+    max-width: 250px;
+    min-width: 250px;
+    // transition: margin-left .3s ease-in-out,left .3s ease-in-out,margin-right .3s ease-in-out,right .3s ease-in-out;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper::before {
+    background: #466b71;
+    content: " ";
+    height: 264px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.premise-header {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
+ //   border-bottom: 1px;
+    z-index: 1;
+    position: relative;
+}
+.nav-item >
+.nav-link.active {
+    background-color: coral;
+}
+
+.nav.nav-pills.nav-fill >
+.nav-item >
+.nav-link.active {
+    background-color: rgb(42, 36, 69);
+}
+
+
+// import bootstrap 5+
+// @import '../node_modules/bootstrap/scss/bootstrap'

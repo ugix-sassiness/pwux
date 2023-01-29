@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - member</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    @*<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />*@
+    <link rel="stylesheet" href="~/css/pwuxstyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/member.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="navbar d-flex justify-content-end p-0">
+
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="row g-0">
+        <div class="wrapper">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <div class="text-center">
+                        <img src="https://www.powerwizard.com/wp-content/uploads/2022/01/pw-logo.svg" class="navbar-brand-img logo-light logo-small" alt="..." width="190" height="41">
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span data-feather="home" class="align-text-bottom"></span>
+                                My Savings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Electricity Contract Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Refer a Friend
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users" class="align-text-bottom"></span>
+                                Transfer My Service
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Plan Renewal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Add a New Service Address
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+                @**@
+
+                <div class="premise-header py-3 mb-4 border-bottom me-3">
+
+                    <div class="row">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h2>My Account</h2>
+                            </div>
+
+                            <div>
+                                <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">8921 Briar Forest Drive, Houston, TX 77024</option>
+                                        <option value="2">2071 Greenbriar Rd, Houston, TX 77030</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <nav class="nav nav-pills nav-fill">
+                            <ul class="nav nav-pills nav-fill">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Electricity</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rooftop Solar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Go Carbon Neutral</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">HVAC Solutions</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                </div>
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>*@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
