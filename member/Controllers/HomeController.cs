@@ -17,8 +17,32 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Messages()
+    {
+        return View();
+    }
 
-    public IActionResult Privacy()
+    public IActionResult ContractDetails()
+    {
+        return View();
+    }
+
+    public IActionResult TransferMyService()
+    {
+        return View();
+    }
+
+    public IActionResult PlanRenewal()
+    {
+        return View();
+    }
+
+    public IActionResult NewServiceAddress()
+    {
+        return View();
+    }
+
+    public IActionResult ReferAFriend()
     {
         return View();
     }
