@@ -87,21 +87,23 @@ $form-select-bg: rgb(236, 240, 242);
     position: relative;
 }
 
+.nav-item >
+.nav-link {
+    color:rgb(36, 60, 65)
+}
 
 .nav-item >
 .nav-link.active {
     background-color: rgba(56,161,182, 0.2);
     color: #338595;
 }
-.nav-item >
-.nav-link {
-    color:rgb(48, 90, 98)
-}
+
 
 .nav.nav-pills.nav-fill >
 .nav-item >
 .nav-link.active {
-    background-color: #38A1B6
+    background-color: #38A1B6;
+    //background-color: #A9CF37;
 }
 
 // import bootstrap 5+

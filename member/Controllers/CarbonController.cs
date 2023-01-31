@@ -4,16 +4,24 @@ using member.Models;
 
 namespace member.Controllers;
 
-public class SolarController : Controller
+public class CarbonController : Controller
 {
-    private readonly ILogger<SolarController> _logger;
+    private readonly ILogger<CarbonController> _logger;
 
-    public SolarController(ILogger<SolarController> logger)
+    public CarbonController(ILogger<CarbonController> logger)
     {
         _logger = logger;
     }
 
     public IActionResult Index()
+    {
+        return View();
+    }
+    public IActionResult EmissionsProfile()
+    {
+        return View();
+    }
+    public IActionResult OurProjects()
     {
         return View();
     }
@@ -31,7 +39,10 @@ public class SolarController : Controller
     {
         return View();
     }
-
+    public IActionResult PlanRenewal()
+    {
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

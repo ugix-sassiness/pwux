@@ -4,11 +4,11 @@ using member.Models;
 
 namespace member.Controllers;
 
-public class HomeController : Controller
+public class SolarController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<SolarController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public SolarController(ILogger<SolarController> logger)
     {
         _logger = logger;
     }
@@ -22,21 +22,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult ContractDetails()
-    {
-        return View();
-    }
-
-    public IActionResult TransferMyService()
-    {
-        return View();
-    }
-
-    public IActionResult PlanRenewal()
-    {
-        return View();
-    }
-
     public IActionResult NewServiceAddress()
     {
         return View();
@@ -46,6 +31,7 @@ public class HomeController : Controller
     {
         return View();
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

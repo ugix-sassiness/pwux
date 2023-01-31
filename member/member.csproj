@@ -10,8 +10,12 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <None Remove="scss\components\" />
+    <None Remove="Views\Carbon\" />
+    <None Remove="Views\HVAC\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scss\components\" />
+    <Folder Include="Views\Carbon\" />
+    <Folder Include="Views\HVAC\" />
   </ItemGroup>
 </Project>

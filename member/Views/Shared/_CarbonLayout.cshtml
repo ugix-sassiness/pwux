@@ -34,26 +34,44 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">
                                 <span data-feather="home" class="align-text-bottom"></span>
-                                Solar Savings Calculator
+                                My Carbon Footprint
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Carbon" asp-action="EmissionsProfile">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                My Emissions Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Carbon" asp-action="OurProjects">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Our Projects
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ReferAFriend">
+                            <a class="nav-link" asp-area="" asp-controller="Carbon" asp-action="ReferAFriend">
                                 <span data-feather="shopping-cart" class="align-text-bottom"></span>
                                 Refer a Friend
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">
+                            <a class="nav-link" asp-area="" asp-controller="Carbon" asp-action="Messages">
                                 <span data-feather="bar-chart-2" class="align-text-bottom"></span>
                                 Messages
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Carbon" asp-action="PlanRenewal">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Plan Renewal
+                            </a>
+                        </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="NewServiceAddress">
+                            <a class="nav-link" asp-area="" asp-controller="Carbon" asp-action="NewServiceAddress">
                                 <span data-feather="layers" class="align-text-bottom"></span>
                                 Add a New Service Address
                             </a>
@@ -92,16 +110,16 @@
                         <nav class="nav nav-pills nav-fill">
                             <ul class="nav nav-pills nav-fill">
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="/">Electricity</a>
+                                    <a class="nav-link fw-bold" href="/Home">Electricity</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active fw-bold" href="/Solar" aria-current="page">Rooftop Solar</a>
+                                    <a class="nav-link fw-bold" href="/Solar" aria-current="page">Rooftop Solar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bold" asp-area="" asp-controller="Carbon" asp-action="/Carbon">Go Carbon Neutral</a>
+                                    <a class="nav-link active fw-bold" href="/Carbon">Carbon Neutral</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bold" asp-area="" asp-controller="HVAC" asp-action="NewServiceAddress">HVAC Solutions</a>
+                                    <a class="nav-link fw-bold" href="/HVAC">HVAC Solutions</a>
                                 </li>
                             </ul>
 
