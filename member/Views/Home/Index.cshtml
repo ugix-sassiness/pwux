@@ -5,46 +5,83 @@
 <div class="py-4 bg-light me-4">
 
     <div class="container">
-        @*<div class="row">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h5>Action headline</h5>
-                            <p class="card-text pb-2">
-                                Electricity Plan used at address: 8921 Briar Forest Drive, Houston, TX 77024
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col-md-12">
                 <div class="card shadow-sm">
+                    @*
+        <div class="card-body">
+            <p class="card-text">Actionable Content with details on what we want the user to do goes here.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+            </div>
+        </div>
+                    *@
                     <div class="card-body">
-                        <p class="card-text">Actionable Content with details on what we want the user to do goes here.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
+                        <div class="d-flex justify-content-start align-items-center"><div class="me-3"><span class="badge bg-primary badge-primary">New</span></div>
+                            
+                                @*<div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>*@
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <svg class="bd-placeholder-img" width="100%" height="55px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#444" /></svg>
+                                        <div class="container">
+                                            <div class="carousel-caption">
+                                                <p class="text-black">Slide 1-Some representative placeholder content for the first slide of the carousel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <svg class="bd-placeholder-img" width="100%" height="55px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#444" /></svg>
+                                        <div class="container">
+                                            <div class="carousel-caption text-start">
+                                                <p>Slide 2-Some representative placeholder content for the first slide of the carousel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <svg class="bd-placeholder-img" width="100%" height="55px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee" /></svg>
+                                        <div class="container">
+                                            <div class="carousel-caption text-start">
+                                                <p>Slide 3-Some representative placeholder content for the first slide of the carousel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                           
                         </div>
                     </div>
+                    @*end ticker*@
+
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text">Electricity wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <h6 class="card-subtitle">Total Users</h6>
+                        <div class="row align-items-center gx-2 mb-1">
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -52,13 +89,14 @@
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <h6 class="card-subtitle">Total Users</h6>
+                        <div class="row align-items-center gx-2 mb-1">
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,47 +104,35 @@
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <h6 class="card-subtitle">Total Users</h6>
+                        <div class="row align-items-center gx-2 mb-1">
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col-md-6">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <h6 class="card-subtitle">Total Users</h6>
+                        <div class="row align-items-center gx-2 mb-1">
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <div class="col-6">
+                                <h2 class="card-title text-inherit">72,540</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
+            <div class="col-md-6">
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -115,8 +141,7 @@
                     </div>
                 </div>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                <script>
-                    const ctx = document.getElementById('myChart');
+                <script>const ctx = document.getElementById('myChart');
                     new Chart(ctx, {
                         type: 'bar',
                         data: {
@@ -134,9 +159,38 @@
                                 }
                             }
                         }
-                    });
-                </script>
+                    });</script>
             </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
