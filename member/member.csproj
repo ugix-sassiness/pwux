@@ -17,5 +17,9 @@
     <Folder Include="scss\components\" />
     <Folder Include="Views\Carbon\" />
     <Folder Include="Views\HVAC\" />
+    <Folder Include="wwwroot\lib\popper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\popper\" />
   </ItemGroup>
 </Project>
