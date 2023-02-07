@@ -2,76 +2,20 @@
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="py-4 bg-light me-4">
+<div class="py-4 bg-light">
 
     <div class="container">
-
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col-md-12">
-                @*start ticker *@
-                <div class="card shadow-sm">
-
-                    <div class="card-body">
-                        @*controls*@
-                        <div>
-                            <button class="tinyslider-control-prev" type="button" data-bs-target="#TinySlider" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="tinyslider-control-next" type="button" data-bs-target="#TinySlider" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div class="me-3"><span class="badge bg-primary badge-primary">New</span></div>
-                            <div id="TinySlider" class="carousel slide carousel-fade" data-bs-ride="false">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="container">
-                                            <div>
-                                                <p class="text-black">Slide 1-Some representative placeholder content for the first slide of the carousel.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="container">
-                                            <div>
-                                                <p class="text-black">Slide 2-Some representative placeholder content for the first slide of the carousel.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="container">
-                                            <div>
-                                                <p class="text-black">Slide 3-Some representative placeholder content for the first slide of the carousel.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    @*end ticker*@
-
-                </div>
-            </div>
-
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">$56.54</h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                             </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
+                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
                 </div>
@@ -79,14 +23,13 @@
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">$1,850.86</h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                             </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
+                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
                 </div>
@@ -94,144 +37,65 @@
             <div class="col">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                             </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">$5,000,00</h2>
-                            </div>
+                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="col-lg-4">
-                <!-- Title -->
-                <h2 class="mb-0">Discover the best places to visit🔥</h2>
-
-                <div class="d-sm-flex justify-content-sm-between align-items-center mt-4">
-                    <!-- Avatar group -->
-                    <ul>
-                        <li>
-                            Best Price Always Pledge
-                        </li>
-                        <li>
-                            Power Wizard Concierge
-                        </li>
-                        <li>
-                            100% Renewable Energy Plans
-                        </li>
-                        <li>
-                            360-day Access to the best rates
-                        </li>
-                    </ul>
-
-
-                    <!-- Rating -->
-                    <h5 class="m-0"><i class="fa-solid fa-star text-warning me-2"></i>4.5</h5>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Button -->
-                <a href="#" class="btn btn-lg btn-primary-soft mb-0 mt-4">Explore places <i class="bi fa-fw bi-arrow-right ms-2"></i></a>
             </div>
-
-
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Card item -->
-                        <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                            <!-- Image -->
-                            <img src="https://images.unsplash.com/photo-1500531441062-756be5e34f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" class="rounded-3" alt="">
-                            <!-- Full screen button -->
-                            <a class="hover-element position-absolute w-100 h-100" data-glightbox data-gallery="gallery" href="https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80">
-                                <i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                            </a>
-                        </div>
-
-                        <!-- Testimonials START -->
-                        <!--<div class="tiny-slider arrow-round arrow-blur arrow-hover arrow-xs my-4 mb-md-0">
-                    <div class="tiny-slider-inner pb-1" data-autoplay="true" data-arrow="true" data-dots="false" data-items="1">-->
-                        <!-- Testimonial item -->
-                        <!--<div class="card bg-transparent">
-                    <div class="row align-items-center">-->
-                        <!-- Image -->
-                        <!--<div class="col-4">
-                        <img src="https://images.unsplash.com/photo-1500531441062-756be5e34f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" class="card-img" alt="">
-                    </div>-->
-                        <!-- Card body -->
-                        <!--<div class="col-8">
-                                <div class="card-body p-0">
-                                    <p class="mb-0">Farther-related bed and passage comfort civilly.</p>
-                                    <h6 class="card-title mb-0 mt-2">Louis Ferguson</h6>
-                                </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                             </div>
-                        </div>
-                    </div>-->
-                        <!-- Testimonial item -->
-                        <!--<div class="card bg-transparent">
-                    <div class="row align-items-center">-->
-                        <!-- Image -->
-                        <!--<div class="col-4">
-                        <img src="https://images.unsplash.com/photo-1500101735689-f4ceaddcf88c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" class="card-img" alt="">
-                    </div>-->
-                        <!-- Card body -->
-                        <!--<div class="col-8">
-                                        <div class="card-body p-0">
-                                            <p class="mb-0">Farther-related bed and passage comfort civilly.</p>
-                                            <h6 class="card-title mb-0 mt-2">Lori Stevens</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                        <!-- Testimonials END -->
-                    </div>
-
-                    <div class="col-md-6">
-                        <!-- Card item -->
-                        <div class="card card-element-hover card-overlay-hover overflow-hidden mb-4">
-                            <!-- Image -->
-                            <img src="https://images.unsplash.com/photo-1464855499786-2839659d9e5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" class="rounded-3" alt="">
-                            <!-- Full screen button -->
-                            <a class="hover-element position-absolute w-100 h-100" data-glightbox data-gallery="gallery" href="https://www.youtube.com/embed/tXHviS-4ygo">
-                                <span class="btn text-danger btn-round btn-white position-absolute top-50 start-50 translate-middle mb-0">
-                                    <i class="fas fa-play"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <!-- Card item -->
-                        <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                            <!-- Image -->
-                            <img src="https://images.unsplash.com/photo-1498947823924-a93383b60a15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" class="rounded-3" alt="">
-                            <!-- Full screen button -->
-                            <a class="hover-element position-absolute w-100 h-100" data-glightbox data-gallery="gallery" href="https://images.unsplash.com/photo-1498947823924-a93383b60a15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80">
-                                <i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                            </a>
+                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
-                </div><!-- Row END -->
-
-
-
-
-
-
+                </div>
             </div>
-
-
-
-
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
         @* Start Footer *@
         <footer>
-            <div class="container px-0 bg-footer">
-                <div class="rounded-top p-4 pb-0">
+            <div class="container px-0">
+                <div class="rounded-top p-4 pb-0 bg-footer-color">
 
                     <!-- Divider -->
                     <hr class="mt-4 mb-0">
@@ -273,6 +137,5 @@
             </div>
         </footer>
         @* End Footer *@
-
     </div>
 </div>
