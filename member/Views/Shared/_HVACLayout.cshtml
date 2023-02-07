@@ -12,10 +12,6 @@
     @* Start Header *@
     <header class="navbar d-flex justify-content-end p-0">
 
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <div class="navbar-nav">
             <div class="col-4 d-flex">
                 <div class="nav-item text-nowrap">
@@ -24,6 +20,9 @@
                 <div class="nav-item text-nowrap">
                     <a class="nav-link px-3" href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
                 </div>
+                <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -73,54 +72,55 @@
 
 
             <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
-                @**@
+                <div class="container-fluid">
 
-                <div class="premise-header pt-3 me-3">
+                    <div class="premise-header pt-3 me-3">
 
-                    <div class="row">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <h1 class="text-white">My Account</h1>
-                                <p class="fs-6 text-white">All your Power Wizard information convieniently accessible from the dropdown.</p>
+                        <div class="row">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h1 class="text-white">My Account</h1>
+                                    <p class="fs-6 text-white">All your Power Wizard information convieniently accessible from the dropdown.</p>
+                                </div>
+
+                                <div>
+                                    <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1">8921 Briar Forest Drive, Houston, TX 77024</option>
+                                            <option value="2">2071 Greenbriar Rd, Houston, TX 77030</option>
+                                        </select>
+                                    </form>
+                                </div>
+
                             </div>
+                        </div>
 
-                            <div>
-                                <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="1">8921 Briar Forest Drive, Houston, TX 77024</option>
-                                        <option value="2">2071 Greenbriar Rd, Houston, TX 77030</option>
-                                    </select>
-                                </form>
-                            </div>
+
+                        <div class="row">
+                            <nav class="nav nav-pills nav-fill">
+                                <ul class="nav nav-pills nav-fill">
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/Home"><i class="fa-sharp fa-solid fa-bolt-lightning"></i> Electricity</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/Solar" aria-current="page"><i class="fa-sharp fa-solid fa-solar-panel"></i> Rooftop Solar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/Carbon"><i class="fa-sharp fa-solid fa-cloud"></i> Carbon Neutral</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active fw-bold" href="/"><i class="fa-solid fa-fan"></i> HVAC Solutions</a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+
 
                         </div>
+                        @*<p class="pt-3 h6 text-white">You've made all the right energy moves. Your're maximizing savings</p>*@
                     </div>
-
-
-                    <div class="row">
-                        <nav class="nav nav-pills nav-fill">
-                            <ul class="nav nav-pills nav-fill">
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="/Home"><i class="fa-sharp fa-solid fa-bolt-lightning"></i> Electricity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="/Solar" aria-current="page"><i class="fa-sharp fa-solid fa-solar-panel"></i> Rooftop Solar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="/Carbon"><i class="fa-sharp fa-solid fa-cloud"></i> Carbon Neutral</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active fw-bold" href="/"><i class="fa-solid fa-fan"></i> HVAC Solutions</a>
-                                </li>
-                            </ul>
-
-                        </nav>
-
-
-                    </div>
-                    @*<p class="pt-3 h6 text-white">You've made all the right energy moves. Your're maximizing savings</p>*@
+                    @RenderBody()
                 </div>
-                @RenderBody()
             </main>
 
         </div>

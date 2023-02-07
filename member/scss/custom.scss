@@ -64,6 +64,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/carousel";
 @import "../node_modules/bootstrap/scss/badge";
 @import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/transitions";
 
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -75,6 +76,8 @@ header.navbar {
     background-color: #B8BBD4;
 }
 
+
+
 .sidebar {
     background: transparent;
     border-right: 0;
@@ -85,8 +88,13 @@ header.navbar {
     // transition: margin-left .3s ease-in-out,left .3s ease-in-out,margin-right .3s ease-in-out,right .3s ease-in-out;
     z-index: 1;
     margin-left: 20px;
-    
 }
+
+ @media (max-width: 992px) {
+    .sidebar {
+        margin-left: 0px;
+    }
+  } 
 
 /* .footer > 
 .container {

@@ -5459,6 +5459,43 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 
+.fade {
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing.collapse-horizontal {
+    transition: none;
+  }
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -9579,6 +9616,11 @@ header.navbar {
   margin-left: 20px;
 }
 
+@media (max-width: 992px) {
+  .sidebar {
+    margin-left: 0px;
+  }
+}
 /* .footer > 
 .container {
     width: auto;
