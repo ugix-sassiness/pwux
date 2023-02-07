@@ -9564,22 +9564,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header.navbar {
+  background-color: #B8BBD4;
+}
+
 .sidebar {
   background: transparent;
   border-right: 0;
+  border-radius: 10px;
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
   max-width: 250px;
   min-width: 250px;
-  z-index: 2;
+  z-index: 1;
   margin-left: 20px;
 }
 
-.footer > .container {
-  width: auto;
-  padding: 0 15px;
-  z-index: 1;
-}
-
+/* .footer > 
+.container {
+    width: auto;
+    padding: 0 15px;
+    z-index: 1;
+  } */
 .wrapper {
   align-items: stretch;
   display: flex;
@@ -9649,10 +9654,9 @@ span.carousel-control-next-icon {
   height: 20px;
 }
 
-footer > div.container {
-  background-color: bg-footer;
-}
-
+/* footer > div.container > div.bg-footer{
+    background-color: $solar-coral-dark;
+}   */
 h1 {
   font-family: "BioRhyme", serif;
 }
