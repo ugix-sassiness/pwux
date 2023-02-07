@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6 class="card-subtitle">Total Users</h6>
+                <div class="row align-items-center gx-2 mb-1">
+                    <div class="col-6">
+                        <h2 class="card-title text-inherit">72,540</h2>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="card-title text-inherit">72,540</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <p class="card-text">8921 Briar Forest Drive, Houston, TX 77024</p>
+                <p class="card-text">January 2022 - December 2022</p>
+                <canvas id="myChart">
+                </canvas>
+                <p class="card-text">Avg. Usage: 1,347 kWh</p>
+                <p class="card-text">Annual Usage: 18,168 kWh</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>const ctx = document.getElementById('myChart');
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Jan 31', 'Mar 31', 'May 31', 'Jul 31', 'Sep 31', 'Nov 31'],
+                            datasets: [{
+                                label: 'kWh',
+                                data: [12, 19, 3, 5, 2, 3],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });</script>
+    </div>
+
+
+</body>
+</html>

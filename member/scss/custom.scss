@@ -26,8 +26,7 @@ $custom-colors: (
   "carbon-moss-dark": #708c3b,
   "hvac-gray-light": #989cae,
   "hvac-gray-dark": #2f4858,
-  "footer-light": #dbdbca,
-  "footer-dark": #242435,
+  "bg-footer": #242435,
   
   // accent colors
   "accent-orange": #fd8f3b,
@@ -142,5 +141,35 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     //background-color: #A9CF37;
 }
 
+button.tinyslider-control-prev,
+button.tinyslider-control-next {
+    border-radius: 100%;
+}
+
+
+#TinySlider .tinyslider-control-prev,
+#TinySlider .tinyslider-control-next {
+    width: 20px;
+    height: 20px;
+}
+
+#TinySlider button.tinyslider-control-prev {
+    left: 30px;
+}
+#TinySlider button.tinyslider-control-next {
+    left: 30px;
+}
+
+span.carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+}
+span.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+ footer > div.container {
+    background-color: bg-footer;
+} 
 // import bootstrap 5+
 // @import '../node_modules/bootstrap/scss/bootstrap'
