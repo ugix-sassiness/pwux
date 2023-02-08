@@ -4,11 +4,11 @@ using member.Models;
 
 namespace member.Controllers;
 
-public class MobileController : Controller
+public class MobileCarbonController : Controller
 {
-    private readonly ILogger<MobileController> _logger;
+    private readonly ILogger<MobileCarbonController> _logger;
 
-    public MobileController(ILogger<MobileController> logger)
+    public MobileCarbonController(ILogger<MobileCarbonController> logger)
     {
         _logger = logger;
     }

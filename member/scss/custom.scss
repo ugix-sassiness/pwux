@@ -65,6 +65,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/badge";
 @import "../node_modules/bootstrap/scss/accordion";
 @import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/offcanvas";
 
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -182,6 +183,7 @@ span.carousel-control-next-icon {
     width: 20px;
     height: 20px;
 }
+
 
 /* footer > div.container > div.bg-footer{
     background-color: $solar-coral-dark;

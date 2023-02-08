@@ -12,12 +12,20 @@
     <None Remove="scss\components\" />
     <None Remove="Views\Carbon\" />
     <None Remove="Views\HVAC\" />
+    <None Remove="Views\Mobile\" />
+    <None Remove="Views\MobileCarbon\" />
+    <None Remove="Views\MobileSolar\" />
+    <None Remove="Views\MobileHVAC\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scss\components\" />
     <Folder Include="Views\Carbon\" />
     <Folder Include="Views\HVAC\" />
     <Folder Include="wwwroot\lib\popper\" />
+    <Folder Include="Views\Mobile\" />
+    <Folder Include="Views\MobileCarbon\" />
+    <Folder Include="Views\MobileSolar\" />
+    <Folder Include="Views\MobileHVAC\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\lib\popper\" />
