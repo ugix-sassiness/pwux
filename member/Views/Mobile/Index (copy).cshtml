@@ -1,0 +1,207 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_MobileLayout.cshtml";
+}
+<div class="py-4 bg-light">
+    @* Start Mobile Navbar *@
+    <nav class="navbar">
+        <div class="container">
+            @* Start toggle button *@
+            <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Menu" aria-controls="Menu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            @* End toggle button *@
+
+            <div id="Menu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+                <div class="position-sticky pt-2 sidebar-sticky">
+                    <div class="text-center pb-5">
+                        <img src="https://www.powerwizard.com/wp-content/uploads/2022/01/pw-logo.svg" class="navbar-brand-img logo-light logo-small" alt="..." width="190" height="41">
+                    </div>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+                        <span>Electricity</span>
+                    </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">
+                                <span data-feather="home" class="align-text-bottom"></span>
+                                My Savings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContractDetails">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Electricity Contract Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ReferAFriend">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Refer a Friend
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TransferMyService">
+                                <span data-feather="users" class="align-text-bottom"></span>
+                                Transfer My Service
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">
+                                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                                Messages <span class="badge text-bg-danger">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="PlanRenewal">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Plan Renewal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="NewServiceAddress">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Add a New Service Address
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    @* End Mobile Navbar *@
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* Start Footer *@
+        <footer>
+            <div class="container px-0">
+                <div class="rounded-top p-4 pb-0 bg-footer-color">
+
+                    <!-- Divider -->
+                    <hr class="mt-4 mb-0">
+
+                    <!-- Bottom footer -->
+                    <div class="container py-3 px-0">
+                        <div class="d-md-flex justify-content-between align-items-center text-md-left">
+                            <!-- copyright text -->
+                            <div class="text-primary-hover">
+                                ©2023 Power Wizard. All rights reserved<p>
+                                    PUCT Certificate #BR190584
+                                </p>
+                            </div>
+                            <!-- copyright text -->
+                            <!-- terms of service link -->
+                            <div class="text-primary-hover">
+                                Terms of Service / Privacy Policy
+                            </div>
+                            <!-- terms of links-->
+                            <div class="mt-3 mt-md-0">
+                                <ul class="nav text-primary-hover justify-content-center justify-content-md-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        @* End Footer *@
+    </div>
+</div>
