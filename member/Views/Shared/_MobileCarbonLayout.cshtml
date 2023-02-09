@@ -9,87 +9,90 @@
     <link rel="stylesheet" href="~/member.styles.css" asp-append-version="true" />
 </head>
 <body>
-    @* Start Header *@
-    <header class="navbar d-flex justify-content-end p-0">
+    @* Start Mobile Header *@
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="https://www.powerwizard.com/wp-content/uploads/2022/01/pw-logo.svg" class="navbar-brand-img logo-light logo-small" alt="..." width="190" height="41"></a>
+                <div class="d-flex">
+                    <div class="nav-item text-nowrap">
+                        <a class="nav-link px-3" href="#"><i class="fa-solid fa-sliders"></i> Settings</a>
+                    </div>
+                    <div class="nav-item text-nowrap">
+                        <a class="nav-link px-3" href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-        <div class="navbar-nav">
-            <div class="col-4 d-flex">
-                <div class="nav-item text-nowrap">
-                    <a class="nav-link px-3" href="#"><i class="fa-solid fa-sliders"></i> Settings</a>
-                </div>
-                <div class="nav-item text-nowrap">
-                    <a class="nav-link px-3" href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
-                </div>
-            </div>
-            </div>
     </header>
-    @* End Header *@
+    @* End Mobile Header *@
 
     <div class="row g-0">
         <div class="wrapper">
             @*<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
-                <div class="position-sticky pt-2 sidebar-sticky">
-                    <div class="text-center pb-5">
-                        <img src="https://www.powerwizard.com/wp-content/uploads/2022/01/pw-logo.svg" class="navbar-brand-img logo-light logo-small" alt="..." width="190" height="41">
+                    <div class="position-sticky pt-2 sidebar-sticky">
+                        <div class="text-center pb-5">
+                            <img src="https://www.powerwizard.com/wp-content/uploads/2022/01/pw-logo.svg" class="navbar-brand-img logo-light logo-small" alt="..." width="190" height="41">
+                        </div>
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+                            <span>Electricity</span>
+                        </h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">
+                                    <span data-feather="home" class="align-text-bottom"></span>
+                                    My Savings
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContractDetails">
+                                    <span data-feather="file" class="align-text-bottom"></span>
+                                    Electricity Contract Details
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ReferAFriend">
+                                    <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                    Refer a Friend
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TransferMyService">
+                                    <span data-feather="users" class="align-text-bottom"></span>
+                                    Transfer My Service
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">
+                                    <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                                    Messages <span class="badge text-bg-danger">2</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="PlanRenewal">
+                                    <span data-feather="layers" class="align-text-bottom"></span>
+                                    Plan Renewal
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="NewServiceAddress">
+                                    <span data-feather="layers" class="align-text-bottom"></span>
+                                    Add a New Service Address
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
-                        <span>Electricity</span>
-                    </h6>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">
-                                <span data-feather="home" class="align-text-bottom"></span>
-                                My Savings
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContractDetails">
-                                <span data-feather="file" class="align-text-bottom"></span>
-                                Electricity Contract Details
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ReferAFriend">
-                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                                Refer a Friend
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TransferMyService">
-                                <span data-feather="users" class="align-text-bottom"></span>
-                                Transfer My Service
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">
-                                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                                Messages <span class="badge text-bg-danger">2</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="PlanRenewal">
-                                <span data-feather="layers" class="align-text-bottom"></span>
-                                Plan Renewal
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="NewServiceAddress">
-                                <span data-feather="layers" class="align-text-bottom"></span>
-                                Add a New Service Address
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>*@
+                </nav>*@
 
-<div class="container-fluid">
-            <main role="main">
-                
-                
-                <div class="premise-header pt-3 me-3">
+            <div class="container-fluid">
+                <main role="main">
 
-                    <div class="row">
-                        
+
+                    <div class="premise-header pt-3 me-3">
+
+                        <div class="row">
+
                             <div>
                                 <h1 class="text-white">My Account</h1>
                                 <p class="fs-6 text-white">All your Power Wizard information convieniently accessible from the dropdown.</p>
@@ -103,80 +106,80 @@
                                     </select>
                                 </form>
                             </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <nav class="nav nav-pills justify-content-center">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/Mobile">
+                                            <div class="d-flex flex-column mb-3 text-center">
+                                                <div>
+                                                    <i class="fa-sharp fa-solid fa-bolt-lightning"></i>
+                                                </div>
+                                                <div>Electricity</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/MobileSolar">
+                                            <div class="d-flex flex-column mb-3 text-center">
+                                                <div>
+                                                    <i class="fa-sharp fa-solid fa-solar-panel"></i>
+                                                </div>
+                                                <div>Rooftop Solar</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active bg-carbon-moss-dark fw-bold" href="/MobileCarbon" aria-current="page">
+                                            <div class="d-flex flex-column mb-3 text-center">
+                                                <div>
+                                                    <i class="fa-sharp fa-solid fa-cloud"></i>
+                                                </div>
+                                                <div>Carbon Neutral</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    @*<li class="nav-item">
+                                            <a class="nav-link fw-bold" href="/MobileHVAC">
+                                                <div class="d-flex flex-column mb-3 text-center">
+                                                    <div>
+                                                        <i class="fa-solid fa-fan"></i>
+                                                    </div>
+                                                    <div>HVAC Solutions</div>
+                                                </div>
+                                            </a>
+                                        </li>*@
+                                </ul>
+                            </nav>
+
+
+                            @*<nav class="nav nav-pills nav-fill">
+                                    <ul class="nav nav-pills nav-fill">
+                                        <li class="nav-item">
+                                            <a class="nav-link active bg-electric-teal-light fw-bold" href="/"><i class="fa-sharp fa-solid fa-bolt-lightning"></i> Electricity</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-bold" href="/Solar" aria-current="page"><i class="fa-sharp fa-solid fa-solar-panel"></i> Rooftop Solar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-bold" href="/Carbon"><i class="fa-sharp fa-solid fa-cloud"></i> Carbon Neutral</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fw-bold" href="/HVAC"><i class="fa-solid fa-fan"></i>  HVAC Solutions</a>
+                                        </li>
+                                    </ul>
+                                </nav>*@
+                        </div>
+
                     </div>
+                    @RenderBody()
 
-
-                    <div class="row">
-
-                        <nav class="nav nav-pills justify-content-center">
-                            <ul class="nav nav-pills nav-fill">
-                                <li class="nav-item ">
-                                    <a class="nav-link fw-bold" href="/Mobile">
-                                        <div class="d-flex flex-column mb-3">
-                                            <div>
-                                                <i class="fa-sharp fa-solid fa-bolt-lightning"></i>
-                                            </div>
-                                            <div>Electricity</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fw-bold" href="/MobileSolar">
-                                        <div class="d-flex flex-column mb-3">
-                                            <div>
-                                                <i class="fa-sharp fa-solid fa-solar-panel"></i>
-                                            </div>
-                                            <div>Rooftop Solar</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active bg-carbon-moss-dark fw-bold" href="/MobileCarbon" aria-current="page">
-                                        <div class="d-flex flex-column mb-3">
-                                            <div>
-                                                <i class="fa-sharp fa-solid fa-cloud"></i>
-                                            </div>
-                                            <div>Carbon Neutral</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                @*<li class="nav-item">
-                                    <a class="nav-link fw-bold" href="/MobileHVAC">
-                                        <div class="d-flex flex-column mb-3">
-                                            <div>
-                                                <i class="fa-solid fa-fan"></i>
-                                            </div>
-                                            <div>HVAC Solutions</div>
-                                        </div>
-                                    </a>
-                                </li>*@
-                            </ul>
-                        </nav>
-
-
-                        @*<nav class="nav nav-pills nav-fill">
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link active bg-electric-teal-light fw-bold" href="/"><i class="fa-sharp fa-solid fa-bolt-lightning"></i> Electricity</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="/Solar" aria-current="page"><i class="fa-sharp fa-solid fa-solar-panel"></i> Rooftop Solar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="/Carbon"><i class="fa-sharp fa-solid fa-cloud"></i> Carbon Neutral</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="/HVAC"><i class="fa-solid fa-fan"></i>  HVAC Solutions</a>
-                </li>
-            </ul>
-        </nav>*@
-                    </div>
-
-                </div>
-                @RenderBody()
-                    
-            </main>
-</div>
+                </main>
+            </div>
         </div>
 
     </div>
