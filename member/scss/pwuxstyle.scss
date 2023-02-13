@@ -1,5 +1,5 @@
 @use 'custom';
-
+@use './components/card';
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
 
 h1 {
@@ -10,3 +10,6 @@ h3 {
     font-family: 'Barlow', sans-serif;
 }
 
+body {
+    background-color: #fffafa;
+}

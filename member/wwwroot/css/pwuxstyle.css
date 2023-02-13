@@ -10249,12 +10249,21 @@ span.carousel-control-next-icon {
 /* footer > div.container > div.bg-footer{
     background-color: $solar-coral-dark;
 }   */
+.card {
+  border-width: 0;
+  box-shadow: 0px 0px 40px rgba(22, 129, 223, 0.1);
+}
+
 h1 {
   font-family: "BioRhyme", serif;
 }
 
 h3 {
   font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #fffafa;
 }
 
 /*# sourceMappingURL=pwuxstyle.css.map */
