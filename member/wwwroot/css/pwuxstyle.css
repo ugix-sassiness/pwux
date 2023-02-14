@@ -10195,6 +10195,60 @@ header.navbar {
   width: 100%;
 }
 
+.wrapperCarbon {
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.wrapperCarbon::before {
+  background: linear-gradient(-45deg, rgba(94, 94, 94, 0.7), rgba(164, 163, 88, 0.5)), url(https://picsum.photos/g/2000/1200?image=251) center center/cover no-repeat;
+  content: " ";
+  height: 264px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.wrapperSolar {
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.wrapperSolar::before {
+  background: linear-gradient(-45deg, rgba(28, 144, 191, 0.7), rgba(235, 138, 61, 0.5)), url(https://picsum.photos/g/2000/1200?image=931) center center/cover no-repeat;
+  content: " ";
+  height: 264px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.wrapperHVAC {
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.wrapperHVAC::before {
+  background: linear-gradient(-45deg, rgba(28, 144, 191, 0.7), rgba(101, 83, 69, 0.5)), url(https://picsum.photos/g/2000/1200?image=893) center center/cover no-repeat;
+  content: " ";
+  height: 264px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .premise-header {
   z-index: 1;
   position: relative;
@@ -10252,6 +10306,30 @@ span.carousel-control-next-icon {
 .card {
   border-width: 0;
   box-shadow: 0px 0px 40px rgba(22, 129, 223, 0.1);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  border-radius: 50%;
+  bottom: 30px !important;
+  top: auto;
+  opacity: 0.8;
+}
+
+.carousel-control-prev {
+  left: 30px;
+}
+
+.carousel-control-next {
+  left: 70px;
 }
 
 h1 {

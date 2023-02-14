@@ -122,8 +122,58 @@ header.navbar {
     width: 100%;
 }
 
+.wrapperCarbon {
+    align-items: stretch;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
 
+.wrapperCarbon::before {
+    background: linear-gradient(-45deg, rgba(94,94,94,.7), rgba(164,163,88,.5)), url(https://picsum.photos/g/2000/1200?image=251) center center / cover no-repeat;
+    content: " ";
+    height: 264px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
+.wrapperSolar {
+    align-items: stretch;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapperSolar::before {
+    background: linear-gradient(-45deg, rgba(28,144,191,.7), rgba(235,138,61,.5)), url(https://picsum.photos/g/2000/1200?image=931) center center / cover no-repeat;
+    content: " ";
+    height: 264px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.wrapperHVAC {
+    align-items: stretch;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapperHVAC::before {
+    background: linear-gradient(-45deg, rgba(28,144,191,.7), rgba(101, 83, 69, 0.5)), url(https://picsum.photos/g/2000/1200?image=893) center center / cover no-repeat;
+    content: " ";
+    height: 264px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .premise-header {
    // padding-top: 3px;
   //  padding-bottom: 3px;
