@@ -2,185 +2,149 @@
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="py-4 bg-light me-4">
-
+<div class="py-4">
     <div class="container">
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col-md-12">
-                @*start ticker *@
-        <div class="card shadow-sm">
-
-            <div class="card-body">
-                <div class="d-flex justify-content-start align-items-center">
-                    <div class="me-3"><span class="badge bg-primary badge-primary">New</span></div>
-                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#444" /></svg>
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <p class="text-black">Slide 1-Some representative placeholder content for the first slide of the carousel.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#444" /></svg>
-                                <div class="container">
-                                    <div class="carousel-caption text-start">
-                                        <p>Slide 2-Some representative placeholder content for the first slide of the carousel.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee" /></svg>
-                                <div class="container">
-                                    <div class="carousel-caption text-start">
-                                        <p>Slide 3-Some representative placeholder content for the first slide of the carousel.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-
-                    </div>
-                </div>
-                </div>
-            @*end ticker*@
-
-            </div>
-            </div>
-
-            <div class="col">
+        <div class="row row-cols-1">
+            <div class="col-12">
                 <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">$56.54</h2>
-                            </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
-                        </div>
-                    </div>
+                    News Ticker goes here...
                 </div>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">$1,850.86</h2>
-                            </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">$5,000,000</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h6 class="card-subtitle">Total Users</h6>
-                        <div class="row align-items-center gx-2 mb-1">
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
-                            <div class="col-6">
-                                <h2 class="card-title text-inherit">72,540</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">8921 Briar Forest Drive, Houston, TX 77024</p>
-                        <p class="card-text">January 2022 - December 2022</p>
-                        <canvas id="myChart">
-                        </canvas>
-                        <p class="card-text">Avg. Usage: 1,347 kWh</p>
-                        <p class="card-text">Annual Usage: 18,168 kWh</p>
-                    </div>
-                </div>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                <script>const ctx = document.getElementById('myChart');
-                    new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ['Jan 31', 'Mar 31', 'May 31', 'Jul 31', 'Sep 31', 'Nov 31'],
-                            datasets: [{
-                                label: 'kWh',
-                                data: [12, 19, 3, 5, 2, 3],
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            }
-                        }
-                    });</script>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="position-relative">
-                        <img class="card-img" src="https://architecturaldigest.jppadmin.com/wp-content/uploads/sites/8/2022/12/AdobeStock_519445978-scaled.jpeg" alt="Card image">
-                        <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                            <!-- Card overlay -->
-                            <div class="w-100">
-                                <!-- Card category -->
-                                <a href="#" class="badge text-bg-primary mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Sports</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="position-relative">
-                        <img class="card-img" src="https://media.istockphoto.com/id/1303391858/photo/winding-forest-road.jpg?s=2048x2048&w=is&k=20&c=4i2Nn1s0aTNAvhreByiDrxQ92D3korGMqc3W0SCREHI=" alt="Card image">
-                        <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                            <!-- Card overlay -->
-                            <div class="w-100">
-                                <!-- Card category -->
-                                <a href="#" class="badge text-bg-primary mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Sports</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+    <div class="container mt-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* Start Desktop Footer *@
+        <footer>
+            <div class="container px-0">
+                <div class="rounded-top p-4 pb-0 bg-footer-color">
+
+                    <!-- Divider -->
+                    <hr class="mt-4 mb-0">
+
+                    <!-- Bottom footer -->
+                    <div class="container py-3 px-0">
+                        <div class="d-md-flex justify-content-between align-items-center text-md-left">
+                            <!-- copyright text -->
+                            <div class="text-primary-hover">
+                                ©2023 Power Wizard. All rights reserved<p>
+                                    PUCT Certificate #BR190584
+                                </p>
+                            </div>
+                            <!-- copyright text -->
+                            <!-- terms of service link -->
+                            <div class="text-primary-hover">
+                                Terms of Service / Privacy Policy
+                            </div>
+                            <!-- terms of links-->
+                            <div class="mt-3 mt-md-0">
+                                <ul class="nav text-primary-hover justify-content-center justify-content-md-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-reset" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        @* End Desktop Footer *@
     </div>
 </div>
