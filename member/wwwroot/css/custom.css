@@ -3233,7 +3233,7 @@ textarea.form-control-lg {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.5;
   color: #212529;
   background-color: rgb(236, 240, 242);
@@ -3241,8 +3241,8 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: 2px solid rgb(77, 86, 90);
-  border-radius: 0.375rem;
+  border: 2px solid #ced4da;
+  border-radius: 50rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
@@ -10259,10 +10259,15 @@ header.navbar {
 
 .nav-item > .nav-link {
   color: rgb(36, 60, 65);
+  font-size: 0.925rem;
 }
 
-.nav-item > .nav-link.active {
+.nav-item.active {
   background-color: rgba(56, 161, 182, 0.2);
+  color: #338595;
+  border-radius: 0.6rem;
+}
+.nav-item.active .nav-link {
   color: #338595;
 }
 

@@ -1,8 +1,9 @@
 // Custom.scss
 $form-select-border-width: 2px;
-$form-select-font-weight: bold;  
-$form-select-border-color:  rgb(77, 86, 90);
+$form-select-font-weight: normal;  
 $form-select-bg: rgb(236, 240, 242);
+$form-select-border-radius: 50rem;
+$form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
 
 // Option B: Include parts of Bootstrap
 
@@ -90,6 +91,8 @@ header.navbar {
     z-index: 1;
     margin-left: 20px;
 }
+
+
 
  @media (max-width: 992px) {
     .sidebar {
@@ -189,15 +192,19 @@ header.navbar {
 
 .nav-item >
 .nav-link {
-    color:rgb(36, 60, 65)
+    color:rgb(36, 60, 65);
+    font-size: 0.925rem;
 }
 
-.nav-item >
-.nav-link.active {
+ .nav-item.active {
     background-color: rgba(56,161,182, 0.2);
     color: #338595;
-}
-
+    border-radius: .6rem;
+    .nav-link {
+        //font-weight:600;
+        color: #338595;
+    }
+} 
 
 .nav.nav-pills.nav-fill >
 .nav-item >

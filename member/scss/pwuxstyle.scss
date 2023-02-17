@@ -14,3 +14,15 @@ h3 {
 body {
     background-color: #fffafa;
 }
+
+.form-select:hover {
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+    border-color: rgb(215, 112, 9);
+}
+.icon-lg {
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
