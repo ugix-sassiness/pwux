@@ -10185,7 +10185,7 @@ header.navbar {
 }
 
 .wrapper::before {
-  background: linear-gradient(-45deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7)), url(https://picsum.photos/g/2000/1200?image=443) center center/cover no-repeat;
+  background: linear-gradient(30deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7));
   content: " ";
   height: 264px;
   left: 0;
@@ -10203,7 +10203,7 @@ header.navbar {
 }
 
 .wrapperCarbon::before {
-  background: linear-gradient(-45deg, rgba(94, 94, 94, 0.7), rgba(164, 163, 88, 0.5)), url(https://picsum.photos/g/2000/1200?image=251) center center/cover no-repeat;
+  background: linear-gradient(-45deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7));
   content: " ";
   height: 264px;
   right: 0;
@@ -10221,7 +10221,7 @@ header.navbar {
 }
 
 .wrapperSolar::before {
-  background: linear-gradient(-45deg, rgba(28, 144, 191, 0.7), rgba(235, 138, 61, 0.5)), url(https://picsum.photos/g/2000/1200?image=931) center center/cover no-repeat;
+  background: linear-gradient(-45deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7));
   content: " ";
   height: 264px;
   right: 0;
@@ -10239,7 +10239,7 @@ header.navbar {
 }
 
 .wrapperHVAC::before {
-  background: linear-gradient(-45deg, rgba(28, 144, 191, 0.7), rgba(101, 83, 69, 0.5)), url(https://picsum.photos/g/2000/1200?image=893) center center/cover no-repeat;
+  background: linear-gradient(-45deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7));
   content: " ";
   height: 264px;
   right: 0;
