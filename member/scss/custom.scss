@@ -1,11 +1,25 @@
 // Custom.scss
-
-
+/*
 $form-select-border-width: 2px;
- $form-select-font-weight: normal;  
- $form-select-bg: rgb(236, 240, 242);
- $form-select-border-radius: 50rem;
- $form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
+$form-select-font-weight: normal;  
+$form-select-bg: rgb(236, 240, 242);
+$form-select-border-radius: 50rem;
+$form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
+*/
+#address-selector { 
+    .form-select {
+        border-width: 2px;
+        background-color: rgb(236, 240, 242);
+        border-radius: 50rem;
+        box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
+}
+.form-select:hover {
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+    border-color: rgb(215, 112, 9);
+}
+  
+}
+
 
 
 
@@ -249,6 +263,7 @@ span.carousel-control-next-icon {
     width: 20px;
     height: 20px;
 }
+
 
 
 /* footer > div.container > div.bg-footer{
