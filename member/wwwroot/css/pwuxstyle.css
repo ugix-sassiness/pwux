@@ -10281,6 +10281,12 @@ header.navbar {
   font-size: 0.925rem;
 }
 
+.nav-item a:hover,
+.nav-item a:focus {
+  background-color: rgba(56, 161, 182, 0.1);
+  border-radius: 0.6rem;
+}
+
 .nav-item.active {
   background-color: rgba(56, 161, 182, 0.2);
   color: #338595;
