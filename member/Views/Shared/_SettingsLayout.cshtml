@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - member</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/css/pwuxstyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/member.styles.css" asp-append-version="true" />
+
+    <script language="JavaScript" type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>$(document).ready(function () {
+            $('.nav.flex-column').find('[href="' + window.location.pathname + '"]').parent().addClass('active')
+        });</script>
+</head>
+<body>
+    @* Start Desktop Header *@
+    <header class="navbar d-flex justify-content-end p-0">
+
+        <div class="navbar-nav">
+            <div class="col-4 d-flex">
+                <div class="nav-item text-nowrap">
+                    <a class="nav-link px-3" href="#"><i class="fa-solid fa-sliders"></i> Settings</a>
+                </div>
+                <div class="nav-item text-nowrap">
+                    <a class="nav-link px-3" href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
+                </div>
+                <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    @* End Desktop Header *@
+
+    <div class="row g-0">
+        <div class="wrapper">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+                <div class="position-sticky pt-2 sidebar-sticky">
+                    <div class="text-center pt-4 pb-3">
+                        <img src="https://www.powerwizard.com/wp-content/uploads/2022/01/pw-logo.svg" class="navbar-brand-img logo-light logo-small" alt="..." width="185" height="36">
+                    </div>
+
+                    <ul class="nav flex-column px-3">
+                        <!-- Title -->
+                        <li class="nav-header">Electricity Service</li>
+
+                        <!-- Menu items -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                <span data-feather="home" class="align-text-bottom"></span>
+                                My Savings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContractDetails">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Electricity Contract Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ReferAFriend">
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                Refer a Friend
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TransferMyService">
+                                <span data-feather="users" class="align-text-bottom"></span>
+                                Transfer My Service
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Messages">
+                                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                                Messages <span class="badge text-bg-danger">2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="PlanRenewal">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Plan Renewal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="NewServiceAddress">
+                                <span data-feather="layers" class="align-text-bottom"></span>
+                                Add a New Service Address
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+
+                <div class="container-fluid">
+                    <div class="premise-header pt-3 me-3">
+
+                        <div class="row">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h1 class="text-white">My Account</h1>
+                                    <p class="fs-6 text-white">All your Power Wizard information convieniently accessible from the dropdown.</p>
+                                </div>
+
+                                <div id="address-selector">
+                                    <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="1">8921 Briar Forest Drive, Houston, TX 77024</option>
+                                            <option value="2">2071 Greenbriar Rd, Houston, TX 77030</option>
+                                        </select>
+                                
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <nav class="nav nav-pills nav-fill">
+                                <ul class="nav nav-pills nav-fill">
+                                    <li class="nav-item">
+                                        <a class="nav-link active bg-electric-teal-light fw-bold" href="/" aria-current="page"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="tabicon" d="m15.528 11.309.35.132-.35-.132ZM1.49 5.299l.35.134-.35-.135ZM8.293 2v-.375a.375.375 0 0 0-.343.224L8.293 2Zm3.519 0 .326.185a.375.375 0 0 0-.326-.56V2ZM8.293 8.2l-.326-.185a.375.375 0 0 0 .326.56V8.2Zm3.519 0 .314.205a.375.375 0 0 0-.314-.58V8.2ZM4.774 19l-.35-.137a.375.375 0 0 0 .664.342L4.774 19Zm3.519-9 .35.137a.375.375 0 0 0-.35-.512V10Zm-3.519 0-.343-.151a.375.375 0 0 0 .343.526V10Zm10.279-4.051a6.978 6.978 0 0 1 .124 5.228l.701.264a7.728 7.728 0 0 0-.137-5.79l-.688.298Zm.124 5.228a6.758 6.758 0 0 1-3.52 3.78l.31.683a7.507 7.507 0 0 0 3.911-4.199l-.701-.264ZM5.08.993a7.504 7.504 0 0 0-3.94 4.17l.7.27a6.754 6.754 0 0 1 3.545-3.755L5.08.993Zm-3.94 4.17a7.728 7.728 0 0 0 .097 5.792l.69-.294a6.978 6.978 0 0 1-.088-5.228l-.7-.27Zm7.152-2.788h3.519v-.75H8.293v.75Zm3.193-.56-3.52 6.2.653.37 3.52-6.2-.653-.37Zm-3.193 6.76h3.519v-.75H8.293v.75Zm3.205-.58-7.038 10.8.628.41 7.038-10.8-.628-.41ZM5.123 19.137l3.52-9-.7-.274-3.518 9 .698.274Zm3.17-9.512H4.774v.75h3.519v-.75Zm-3.176.526 3.52-8-.687-.302-3.52 8 .687.302Z" fill="#7C7C86" /></svg> Electricity</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/Solar"><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.662 14.378 5.787 5.87m7.554 8.556-1.286-8.51M8.84 5.892V14.4M9 0v1.473m2.96-.328-.965.982m-4.954-.982.964.982M4.662 4.091h1.445m5.625 0h1.61M1.928 8.509H16.07M1.286 11.291h15.428M0 14.973h18m-9.08.409v2.373M5.464 18h7.072M.32 14.564l2.17-8.837h13.02l2.17 8.837H.32Zm10.77-10.31c0-.564-.22-1.105-.612-1.504A2.07 2.07 0 0 0 9 2.127a2.07 2.07 0 0 0-1.477.623c-.392.4-.612.94-.612 1.505h4.178Z" stroke="#7C7C86" stroke-width=".5" /></svg> Rooftop Solar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/Carbon"><svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.177 0C9.987 0 8.142 1.386 7.25 3.349c-.476-.349-1.021-.6-1.64-.6-1.561 0-2.816 1.309-2.91 2.938-1.562.6-2.7 2.151-2.7 4.008C0 12.068 1.823 14 4.061 14h13.2C19.321 14 21 12.221 21 10.038c0-2.025-1.465-3.641-3.32-3.872.007-.105.02-.205.02-.313C17.7 2.626 15.222 0 12.177 0Zm0 .89c2.592 0 4.683 2.217 4.683 4.963 0 .202-.016.406-.04.615l-.058.5h.474l.025-.002c1.606 0 2.899 1.37 2.899 3.073 0 1.7-1.293 3.07-2.899 3.07h-13.2C2.276 13.11.84 11.587.84 9.697c0-1.574 1.002-2.888 2.363-3.287l.32-.093-.012-.351c-.002-.063-.005-.094-.005-.097 0-1.236.936-2.229 2.103-2.229.584 0 1.107.25 1.488.655l.464.492.228-.652C8.449 2.241 10.158.89 12.177.89Zm-4.17 5.098c-1.316 0-2.127.932-2.127 2.446 0 1.517.813 2.45 2.126 2.45 1.093 0 1.89-.693 1.969-1.7h-.923c-.09.513-.5.842-1.043.842-.715 0-1.159-.609-1.159-1.591 0-.981.443-1.588 1.157-1.588.54 0 .95.352 1.042.887h.923c-.07-1.013-.892-1.746-1.965-1.746Zm4.597 0c-1.284 0-2.104.935-2.104 2.447 0 1.51.808 2.45 2.104 2.45 1.291 0 2.096-.94 2.096-2.45 0-1.507-.808-2.447-2.096-2.447Zm0 .855c.71 0 1.164.616 1.164 1.591 0 .972-.454 1.595-1.165 1.595-.717 0-1.168-.623-1.168-1.595 0-.974.46-1.59 1.168-1.59Zm3.566 2.085c-.634 0-1.05.38-1.05.955v.014h.69V9.88c0-.193.133-.324.326-.324.184 0 .313.119.313.292 0 .17-.096.295-.495.65l-.78.713v.565h2.046v-.636h-1.036v-.054l.32-.29c.493-.385.673-.67.673-1.023 0-.513-.393-.844-1.007-.844Z" fill="#7C7C86" /></svg> Carbon Neutral</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="/HVAC"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="a" fill="#fff"><path d="M3.782 8.376V17h15.436V8.21H22L11.5.5.5 8.376h3.282Z" /></mask><path d="m7.5 11.433.266.188-.266-.188Zm-2.359 1.833a.325.325 0 0 0 .265.376l2.883.495a.325.325 0 1 0 .11-.64l-2.562-.44.44-2.563a.325.325 0 1 0-.64-.11l-.496 2.882Zm10.282-1.833-.266.188.266-.188Zm1.569 2.213a.325.325 0 0 0 .333-.317l.072-2.924a.325.325 0 0 0-.65-.016l-.064 2.6-2.6-.065a.325.325 0 1 0-.015.65l2.924.072Zm-5.954.584a.325.325 0 0 0 .46 0l2.068-2.069a.325.325 0 0 0-.46-.46l-1.838 1.84L9.43 11.7a.325.325 0 0 0-.46.46l2.068 2.069ZM8.552 5.75l-.325.02v.01a4.983 4.983 0 0 1 .008.152c.003.106.008.26.009.451.002.384-.009.913-.059 1.497-.101 1.186-.36 2.53-.95 3.366l.53.375c.699-.99.965-2.488 1.068-3.686a17.462 17.462 0 0 0 .043-2.203V5.73l-.324.02Zm-1.318 5.496c-.289.41-.77.86-1.198 1.217a14.066 14.066 0 0 1-.748.583l-.01.008a.067.067 0 0 0-.003.001h-.001a314.425 314.425 0 0 1 .375.532l.001-.001.004-.003.013-.009a9.745 9.745 0 0 0 .22-.163c.146-.11.346-.265.566-.45.435-.363.972-.858 1.313-1.34l-.532-.375Zm7.137-5.495-.324-.02v.014l-.003.034-.005.13a17.487 17.487 0 0 0 .051 2.027c.103 1.198.37 2.696 1.067 3.686l.532-.375c-.59-.836-.85-2.18-.951-3.366a16.852 16.852 0 0 1-.044-2.07l.001-.03V5.77l-.324-.02Zm.786 5.87c.325.46.728.941 1.046 1.305a25.122 25.122 0 0 0 .55.607l.008.009.003.002v.001l.236-.224.235-.224-.002-.002-.008-.008a10.02 10.02 0 0 1-.144-.155 23.85 23.85 0 0 1-.389-.434c-.313-.357-.698-.82-1.003-1.252l-.532.375ZM10.943 5v9h.65V5h-.65Zm-7.16 12h-.65v.65h.65V17Zm0-8.624h.65v-.65h-.65v.65Zm-3.283 0-.378-.529-1.646 1.179H.5v-.65ZM11.5.5l.385-.524-.38-.279-.383.274L11.5.5ZM22 8.21v.65h1.983l-1.598-1.174L22 8.21Zm-2.782 0v-.65h-.65v.65h.65Zm0 8.79v.65h.65V17h-.65ZM3.782 7.726h-.534v1.3h.534v-1.3Zm-.534 0H.5v1.3h2.748v-1.3ZM.878 8.904l11-7.875-.756-1.058-11 7.876.756 1.057Zm10.237-7.88 10.5 7.71.77-1.048-10.5-7.71-.77 1.048ZM22 7.56h-2.337v1.3H22v-1.3Zm-2.337 0h-.445v1.3h.445v-1.3Zm-1.095.65V17h1.3V8.21h-1.3Zm.65 8.14H3.782v1.3h15.436v-1.3ZM4.432 17v-4.312h-1.3V17h1.3Zm0-4.312V8.376h-1.3v4.312h1.3Z" fill="#7C7C86" mask="url(#a)" /></svg>  HVAC Solutions</a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+
+
+                        </div>
+
+                    </div>
+                    @RenderBody()
+                </div>
+            </main>
+
+        </div>
+
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+</html>
+
