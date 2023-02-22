@@ -16,6 +16,7 @@
     <None Remove="Views\MobileCarbon\" />
     <None Remove="Views\MobileSolar\" />
     <None Remove="Views\MobileHVAC\" />
+    <None Remove="Views\Settings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scss\components\" />
@@ -26,6 +27,7 @@
     <Folder Include="Views\MobileCarbon\" />
     <Folder Include="Views\MobileSolar\" />
     <Folder Include="Views\MobileHVAC\" />
+    <Folder Include="Views\Settings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\lib\popper\" />

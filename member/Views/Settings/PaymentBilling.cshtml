@@ -1,14 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Personal & Security Info";
+    ViewData["Title"] = "Payment & Billing Info";
     Layout = "~/Views/Shared/_SettingsLayout.cshtml";
 }
 <div class="py-4">
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
+        <div class="row g-3">
+            <div class="col-sm-6">
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text">Carbon wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Ceeewider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -21,21 +21,7 @@
             </div>
 
 
-            <div class="col">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
+            <div class="col-sm-6">
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -49,80 +35,137 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12">
+
                 <div class="card shadow-sm">
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 position-relative overflow-hidden">
-                <div class="bg-secondary rounded-3 bg-opacity-10 p-5 h-100">
-                    <!-- Image -->
-                    <div class="position-absolute bottom-0 end-0 me-3">
-                        <img src="https://eduport.webestica.com/assets/images/element/15.svg" class="h-100px h-sm-200px" alt="">
-                    </div>
-                    <!-- Content -->
-                    <div class="row">
-                        <div class="col-sm-8 position-relative">
-                            <h3 class="mb-1">Best Rated Courses</h3>
-                            <p class="mb-3 h5 fw-light lead">Enroll now in the most popular and best rated courses.</p>
-                            <a href="#" class="btn btn-warning mb-0">View Courses</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="row">
+                            <div class="col-md-8">
 
-            <div class="col">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
 
-                    <!-- Start Carousel -->
-                    <div id="news" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                                <h5>Payment History</h5>
 
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner rounded">
-                            <div class="carousel-item active">
-                                <img src="https://www.w3schools.com/bootstrap5/la.jpg" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="Chicago" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="New York" class="d-block w-100">
+
+                                <p class="card-text pb-2">
+                                    Call us at 855-475-8315 if you have any questions.
+                                </p>
+
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Confirmation ID</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Service Address</th>
+                                            <th scope="col">Payment Method</th>
+                                            <th scope="col">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1010</td>
+                                            <td>Processed</td>
+                                            <td>02/01/2023</td>
+                                            <td>Gold VIP Membership $10/mo</td>
+                                            <td>2071 Greenbriar Rd Houston TX 77030</td>
+                                            <td>Mast****9002</td>
+                                            <td>$10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1009</td>
+                                            <td>Processed</td>
+                                            <td>01/01/2023</td>
+                                            <td>Gold VIP Membership $10/mo</td>
+                                            <td>2071 Greenbriar Rd Houston TX 77030</td>
+                                            <td>Mast****9002</td>
+                                            <td>$10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1008</td>
+                                            <td>Processed</td>
+                                            <td>12/01/2022</td>
+                                            <td>Silver DIY Plan: 60-Day Access</td>
+                                            <td>8921 Briar Forest Dr, Houston TX 77024</td>
+                                            <td>Mast****9002</td>
+                                            <td>$14.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1007</td>
+                                            <td>Processed</td>
+                                            <td>11/01/2022</td>
+                                            <td>Silver DIY Plan: 60-Day Access</td>
+                                            <td>8921 Briar Forest Dr, Houston TX 77024</td>
+                                            <td>Mast****9002</td>
+                                            <td>$14.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1006</td>
+                                            <td>Processed</td>
+                                            <td>10/07/2022</td>
+                                            <td>50% Reduction Expert $19/yr</td>
+                                            <td>8921 Briar Forest Dr, Houston TX 77024</td>
+                                            <td>Mast****9002</td>
+                                            <td>$19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1005</td>
+                                            <td>Processed</td>
+                                            <td>09/01/2022</td>
+                                            <td>Gold VIP Membership $10/mo</td>
+                                            <td>2071 Greenbriar Rd Houston TX 77030</td>
+                                            <td>Mast****9002</td>
+                                            <td>$10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1004</td>
+                                            <td>Processed</td>
+                                            <td>08/01/2022</td>
+                                            <td>Gold VIP Membership $10/mo</td>
+                                            <td>2071 Greenbriar Rd Houston TX 77030</td>
+                                            <td>Mast****9002</td>
+                                            <td>$10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1003</td>
+                                            <td>Processed</td>
+                                            <td>07/01/2022</td>
+                                            <td>Silver DIY Plan: 60-Day Access</td>
+                                            <td>8921 Briar Forest Dr, Houston TX 77024</td>
+                                            <td>Mast****9002</td>
+                                            <td>$14.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1002</td>
+                                            <td>Processed</td>
+                                            <td>06/01/2022</td>
+                                            <td>Silver DIY Plan: 60-Day Access</td>
+                                            <td>8921 Briar Forest Dr, Houston TX 77024</td>
+                                            <td>Mast****9002</td>
+                                            <td>$14.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1001</td>
+                                            <td>Processed</td>
+                                            <td>05/07/2022</td>
+                                            <td>50% Reduction Expert $19/yr</td>
+                                            <td>8921 Briar Forest Dr, Houston TX 77024</td>
+                                            <td>Mast****9002</td>
+                                            <td>$19.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#news" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#news" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
                     </div>
-                    <!-- End Carousel -->
+
                 </div>
+
             </div>
         </div>
         @* Start Footer *@
@@ -171,4 +214,4 @@
         </footer>
         @* End Footer *@
     </div>
-  </div>
+</div>

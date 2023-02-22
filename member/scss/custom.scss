@@ -134,7 +134,9 @@ header.navbar {
     width: 100%;
 }
 
-.wrapper::before {
+
+
+ .wrapper::before {
     background: linear-gradient(90deg, rgba(229,93,135,.7), rgba(95,195,228,.7));
     // background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), url(https://picsum.photos/g/2000/1200?image=443) center center / cover no-repeat;
     content: " ";
@@ -143,7 +145,7 @@ header.navbar {
     position: absolute;
     top: 0;
     width: 100%;
-}
+} 
 
 .wrapperCarbon {
     align-items: stretch;
@@ -222,12 +224,12 @@ header.navbar {
 .nav-item a:hover,
 .nav-item a:focus {
     background-color: rgba(56,161,182, 0.1);
-    border-radius: .6rem;
+    border-radius: .5rem;
 }
  .nav-item.active {
     background-color: rgba(56,161,182, 0.2);
     color: #338595;
-    border-radius: .6rem;
+    border-radius: .5rem;
     .nav-link {
         //font-weight:600;
         color: #338595;

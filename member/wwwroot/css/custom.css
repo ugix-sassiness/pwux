@@ -10283,13 +10283,13 @@ header.navbar {
 .nav-item a:hover,
 .nav-item a:focus {
   background-color: rgba(56, 161, 182, 0.1);
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
 }
 
 .nav-item.active {
   background-color: rgba(56, 161, 182, 0.2);
   color: #338595;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
 }
 .nav-item.active .nav-link {
   color: #338595;
