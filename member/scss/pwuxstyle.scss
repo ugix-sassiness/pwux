@@ -1,19 +1,8 @@
 @use 'custom';
 @use './components/card';
 @use './components/carousel';
-@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
 
-h1 {
-    font-family: 'BioRhyme', serif;
-}
 
-h3 {
-    font-family: 'Barlow', sans-serif;
-}
-
-body {
-    background-color: #fffafa;
-}
 
 .tabicon {
     fill: white; 

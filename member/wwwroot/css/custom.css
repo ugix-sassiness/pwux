@@ -1,22 +1,6 @@
 @charset "UTF-8";
-/*
-$form-select-border-width: 2px;
-$form-select-font-weight: normal;  
-$form-select-bg: rgb(236, 240, 242);
-$form-select-border-radius: 50rem;
-$form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
-*/
-#address-selector .form-select {
-  border-width: 2px;
-  background-color: rgb(236, 240, 242);
-  border-radius: 50rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
-}
-#address-selector .form-select:hover {
-  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
-  border-color: rgb(215, 112, 9);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -88,7 +72,7 @@ $form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 255, 250, 250;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -97,7 +81,7 @@ $form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #fffafa;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -526,6 +510,7 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
+  font-family: "BioRhyme", serif;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -537,6 +522,7 @@ progress {
 
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
+  font-family: "BioRhyme", serif;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -548,6 +534,7 @@ progress {
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
+  font-family: "BioRhyme", serif;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -559,6 +546,7 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
+  font-family: "BioRhyme", serif;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -570,6 +558,7 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
+  font-family: "BioRhyme", serif;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -581,6 +570,7 @@ progress {
 
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
+  font-family: "BioRhyme", serif;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -637,7 +627,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #fffafa;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
   max-width: 100%;
@@ -2129,8 +2119,8 @@ progress {
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
   --bs-nav-tabs-link-active-color: #495057;
-  --bs-nav-tabs-link-active-bg: #fff;
-  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+  --bs-nav-tabs-link-active-bg: #fffafa;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fffafa;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
@@ -3111,7 +3101,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #fffafa;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -3131,7 +3121,7 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #fffafa;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -3254,7 +3244,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #fffafa;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -3329,7 +3319,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #fffafa;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -3435,10 +3425,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fffafa, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #fffafa, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -5343,7 +5333,7 @@ textarea.form-control-lg {
 
 .accordion {
   --bs-accordion-color: #212529;
-  --bs-accordion-bg: #fff;
+  --bs-accordion-bg: #fffafa;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: 1px;
@@ -10168,6 +10158,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+p {
+  color: #242435;
+}
+
 header.navbar {
   background-color: #B8BBD4;
 }
@@ -10188,12 +10182,6 @@ header.navbar {
     margin-left: 0px;
   }
 }
-/* .footer > 
-.container {
-    width: auto;
-    padding: 0 15px;
-    z-index: 1;
-  } */
 .wrapper {
   align-items: stretch;
   display: flex;
@@ -10203,7 +10191,7 @@ header.navbar {
 }
 
 .wrapper::before {
-  background: linear-gradient(90deg, rgba(229, 93, 135, 0.7), rgba(95, 195, 228, 0.7));
+  background: url("https://s3.us-east-2.amazonaws.com/dexter.io/pw-assets/myaccount_bg-pattern.svg") center center/cover no-repeat;
   content: " ";
   height: 264px;
   left: 0;
@@ -10278,21 +10266,60 @@ header.navbar {
 .nav-item > .nav-link {
   color: rgb(36, 60, 65);
   font-size: 0.925rem;
+  font-family: "Barlow", sans-serif;
 }
 
 .nav-item a:hover,
 .nav-item a:focus {
   background-color: rgba(56, 161, 182, 0.1);
   border-radius: 0.5rem;
+  color: #338595;
 }
 
 .nav-item.active {
   background-color: rgba(56, 161, 182, 0.2);
-  color: #338595;
   border-radius: 0.5rem;
 }
 .nav-item.active .nav-link {
+  font-weight: 600;
   color: #338595;
+}
+
+.productmenu {
+  background: linear-gradient(90deg, rgb(44, 66, 95), rgb(13, 23, 38));
+  border-radius: 20px;
+  box-shadow: 0px 56px 72px -30px rgba(50, 55, 63, 0.66);
+  padding: 30px 30px 30px 30px;
+}
+
+.productmenu .triggerprize {
+  color: rgb(161, 167, 165);
+}
+
+.productmenu .address {
+  background: url("https://s3.us-east-2.amazonaws.com/dexter.io/pw-assets/map-pattern.svg");
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: 300px 93px;
+  padding: 10px;
+  font-size: larger;
+  color: #bebebe;
+}
+
+.productmenu .revealoffer {
+  position: absolute;
+  left: 55px;
+  bottom: -30px;
+  font-size: larger;
+  color: #338595;
+  opacity: 0;
+}
+
+.productmenu .revealoffer .offericon {
+  position: absolute;
+  left: -20px;
+  color: #338595;
+  opacity: 0;
 }
 
 .nav.nav-pills.nav-fill > .nav-item > .nav-link.active {
@@ -10328,8 +10355,57 @@ span.carousel-control-next-icon {
   height: 20px;
 }
 
-/* footer > div.container > div.bg-footer{
-    background-color: $solar-coral-dark;
-}   */
+#address-selector .form-select {
+  border-width: 2px;
+  background-color: rgb(236, 240, 242);
+  border-radius: 50rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075) !important;
+}
+#address-selector .form-select:hover {
+  box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+  border-color: rgb(215, 112, 9);
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+p.footer {
+  font-family: "Barlow", sans-serif;
+  color: rgba(47, 72, 88, 0.75);
+}
+
+h1, .h1 {
+  font-family: "Barlow", sans-serif;
+}
+
+h2, .h2 {
+  font-family: "Barlow", sans-serif;
+}
+
+h3, .h3 {
+  font-family: "Barlow", sans-serif;
+}
+
+h4, .h4 {
+  font-family: "Barlow", sans-serif;
+}
+
+h5, .h5 {
+  font-family: "Barlow", sans-serif;
+}
+
+h6, .h6 {
+  font-family: "Barlow", sans-serif;
+}
+
+blockquote > p {
+  font-family: "BioRhyme", serif;
+}
+
+ul.listBenefits > li {
+  font-family: "Barlow", sans-serif;
+  list-style: url("https://www.powerwizard.com/wp-content/themes/genesis-child/images/favicon.ico");
+}
 
 /*# sourceMappingURL=custom.css.map */

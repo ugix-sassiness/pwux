@@ -1,28 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
 // Custom.scss
-/*
-$form-select-border-width: 2px;
-$form-select-font-weight: normal;  
-$form-select-bg: rgb(236, 240, 242);
-$form-select-border-radius: 50rem;
-$form-select-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
-*/
-#address-selector { 
-    .form-select {
-        border-width: 2px;
-        background-color: rgb(236, 240, 242);
-        border-radius: 50rem;
-        box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
-}
-.form-select:hover {
-    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
-    border-color: rgb(215, 112, 9);
-}
-  
-}
 
+$body-bg: #fffafa;
 
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
 
-
+$display-font-family: 'BioRhyme', serif;
+$display-font-style:  null;
+$display-font-weight: 300;
 
 // Option B: Include parts of Bootstrap
 
@@ -88,16 +82,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/offcanvas";
 
 
+
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+p {
+    color:#242435;
+}
 
 header.navbar {
     background-color: #B8BBD4;
 }
-
-
 
 .sidebar {
     background: transparent;
@@ -119,13 +115,6 @@ header.navbar {
     }
   } 
 
-/* .footer > 
-.container {
-    width: auto;
-    padding: 0 15px;
-    z-index: 1;
-  } */
-
 .wrapper {
     align-items: stretch;
     display: flex;
@@ -134,11 +123,9 @@ header.navbar {
     width: 100%;
 }
 
-
-
  .wrapper::before {
-    background: linear-gradient(90deg, rgba(229,93,135,.7), rgba(95,195,228,.7));
-    // background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), url(https://picsum.photos/g/2000/1200?image=443) center center / cover no-repeat;
+   //background: linear-gradient(90deg, rgba(229,93,135,.7), rgba(95,195,228,.7));
+    background: url('https://s3.us-east-2.amazonaws.com/dexter.io/pw-assets/myaccount_bg-pattern.svg') center center / cover no-repeat;
     content: " ";
     height: 264px;
     left: 0;
@@ -219,23 +206,56 @@ header.navbar {
 .nav-link {
     color:rgb(36, 60, 65);
     font-size: 0.925rem;
+    font-family: 'Barlow', sans-serif;
 }
 
 .nav-item a:hover,
 .nav-item a:focus {
     background-color: rgba(56,161,182, 0.1);
     border-radius: .5rem;
+    color: #338595;
 }
  .nav-item.active {
     background-color: rgba(56,161,182, 0.2);
-    color: #338595;
     border-radius: .5rem;
     .nav-link {
-        //font-weight:600;
+        font-weight:600;
         color: #338595;
     }
 } 
 
+.productmenu {
+    background: linear-gradient(90deg, rgb(44, 66, 95), rgb(13, 23, 38));
+    border-radius: 20px;
+    box-shadow: 0px 56px 72px -30px rgba(50, 55, 63, 0.66);
+    padding: 30px 30px 30px 30px;
+}
+.productmenu .triggerprize{
+    color:rgb(161, 167, 165);
+}
+.productmenu .address{
+    background: url('https://s3.us-east-2.amazonaws.com/dexter.io/pw-assets/map-pattern.svg');
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-size: 300px 93px;
+    padding: 10px;
+    font-size: larger;
+    color: #bebebe;
+}
+.productmenu .revealoffer{
+    position: absolute;
+    left: 55px;
+    bottom: -30px;
+    font-size: larger;
+    color: #338595;
+    opacity: 0;
+}
+.productmenu .revealoffer .offericon{
+    position: absolute;
+    left: -20px;
+    color: #338595;
+    opacity: 0;
+}
 .nav.nav-pills.nav-fill >
 .nav-item >
 .nav-link.active {
@@ -271,11 +291,52 @@ span.carousel-control-next-icon {
     height: 20px;
 }
 
+#address-selector { 
+    .form-select {
+        border-width: 2px;
+        background-color: rgb(236, 240, 242);
+        border-radius: 50rem;
+        box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb),.075)!important;
+}
+.form-select:hover {
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+    border-color: rgb(215, 112, 9);
+}
+}
 
+// Typography
 
-/* footer > div.container > div.bg-footer{
-    background-color: $solar-coral-dark;
-}   */
+p {
+    font-family: 'Barlow', sans-serif;
+}
+p.footer {
+    font-family: 'Barlow', sans-serif;
+    color:rgba(47, 72, 88, 0.75);
+}
+h1 {
+    font-family: 'Barlow', sans-serif;
+}
 
-// import bootstrap 5+
-// @import '../node_modules/bootstrap/scss/bootstrap'
+h2 {
+    font-family: 'Barlow', sans-serif;
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+}
+h4 {
+    font-family: 'Barlow', sans-serif;
+}
+h5 {
+    font-family: 'Barlow', sans-serif;
+}
+h6 {
+    font-family: 'Barlow', sans-serif;
+}
+blockquote > p {
+    font-family: 'BioRhyme', serif;
+}
+ul.listBenefits > li {
+    font-family: 'Barlow', sans-serif;
+    list-style: url("https://www.powerwizard.com/wp-content/themes/genesis-child/images/favicon.ico");
+}

@@ -22,14 +22,14 @@
     <Folder Include="scss\components\" />
     <Folder Include="Views\Carbon\" />
     <Folder Include="Views\HVAC\" />
-    <Folder Include="wwwroot\lib\popper\" />
     <Folder Include="Views\Mobile\" />
     <Folder Include="Views\MobileCarbon\" />
     <Folder Include="Views\MobileSolar\" />
     <Folder Include="Views\MobileHVAC\" />
     <Folder Include="Views\Settings\" />
+    <Folder Include="wwwroot\lib\gsap\dist\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Remove="wwwroot\lib\popper\" />
+    <Content Remove="wwwroot\lib\gsap\dist\" />
   </ItemGroup>
 </Project>
