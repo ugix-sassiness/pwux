@@ -10163,7 +10163,7 @@ p {
 }
 
 header.navbar {
-  background-color: #B8BBD4;
+  background-color: rgba(184, 187, 212, 0);
 }
 
 .sidebar {
@@ -10191,7 +10191,8 @@ header.navbar {
 }
 
 .wrapper::before {
-  background: url("https://s3.us-east-2.amazonaws.com/dexter.io/pw-assets/myaccount_bg-pattern.svg") center center/cover no-repeat;
+  background-color: #99b3ff;
+  background-image: radial-gradient(at 86% 41%, hsl(154deg, 96%, 77%) 0px, transparent 50%), radial-gradient(at 99% 74%, hsl(299deg, 90%, 72%) 0px, transparent 50%), radial-gradient(at 45% 49%, hsl(3deg, 87%, 60%) 0px, transparent 50%), radial-gradient(at 63% 92%, hsl(5deg, 89%, 67%) 0px, transparent 50%), radial-gradient(at 38% 59%, hsl(215deg, 80%, 74%) 0px, transparent 50%), radial-gradient(at 82% 78%, hsl(185deg, 84%, 60%) 0px, transparent 50%);
   content: " ";
   height: 264px;
   left: 0;
@@ -10287,7 +10288,7 @@ header.navbar {
 
 .productmenu {
   background: linear-gradient(90deg, rgb(44, 66, 95), rgb(13, 23, 38));
-  border-radius: 20px;
+  border-radius: 1.75rem;
   box-shadow: 0px 56px 72px -30px rgba(50, 55, 63, 0.66);
   padding: 30px 30px 30px 30px;
 }
@@ -10320,6 +10321,11 @@ header.navbar {
   left: -20px;
   color: #338595;
   opacity: 0;
+}
+
+.nav.nav-pills.nav-fill {
+  display: flex;
+  justify-content: center !important;
 }
 
 .nav.nav-pills.nav-fill > .nav-item > .nav-link.active {
