@@ -10158,6 +10158,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px;
+  background-image: linear-gradient(8deg, snow 59%, snow 75%, rgba(255, 250, 250, 0.7490196078) 76%, #1d2e45 78%, rgba(29, 46, 69, 0) 87%), linear-gradient(90deg, #CD5A45 0%, #814749 29%, #5A3B43 35%, #1D2E45 40%, #5377A7 84%);
+}
+
 p {
   color: #242435;
 }
@@ -10174,7 +10180,28 @@ header.navbar {
   max-width: 250px;
   min-width: 250px;
   z-index: 1;
-  margin-left: 20px;
+  margin: 1.5rem 0 0 1.5rem;
+  padding-bottom: 3rem;
+  height: fit-content;
+}
+
+.section-divider {
+  position: relative;
+  transform: rotate(5deg);
+  transform-origin: top left;
+  left: -257px;
+  top: 16%;
+}
+
+.diag-backdrop {
+  position: absolute;
+  width: 159vw;
+  height: 15%;
+  transform: skew(5deg);
+  background: #273044;
+  background: -webkit-linear-gradient(0deg, rgb(215, 219, 208) 98%, rgb(108, 111, 102) 100%);
+  background: -moz-linear-gradient(0deg, rgb(215, 219, 208) 98%, rgb(108, 111, 102) 100%);
+  background: linear-gradient(0deg, rgb(215, 219, 208) 98%, rgb(108, 111, 102) 100%);
 }
 
 @media (max-width: 992px) {
@@ -10191,8 +10218,8 @@ header.navbar {
 }
 
 .wrapper::before {
-  background-color: #99b3ff;
-  background-image: radial-gradient(at 86% 41%, hsl(154deg, 96%, 77%) 0px, transparent 50%), radial-gradient(at 99% 74%, hsl(299deg, 90%, 72%) 0px, transparent 50%), radial-gradient(at 45% 49%, hsl(3deg, 87%, 60%) 0px, transparent 50%), radial-gradient(at 63% 92%, hsl(5deg, 89%, 67%) 0px, transparent 50%), radial-gradient(at 38% 59%, hsl(215deg, 80%, 74%) 0px, transparent 50%), radial-gradient(at 82% 78%, hsl(185deg, 84%, 60%) 0px, transparent 50%);
+  background-color: hsl(209deg, 40%, 20%);
+  background: radial-gradient(at 105% -10%, rgb(249, 240, 240) 0px, transparent 30%), radial-gradient(at 100% 0%, hsl(0deg, 0%, 100%) 0px, transparent 60%), radial-gradient(at 0% 37%, hsla(40deg, 100%, 62%, 0.6) 0px, transparent 50%), radial-gradient(at -50% -10%, hsl(184deg, 23%, 55%) 0px, transparent 10%), radial-gradient(at 95% 33%, hsl(191deg, 87%, 62%) 0px, transparent 50%), radial-gradient(at -10% 92%, hsl(12deg, 100%, 62%) 0px, transparent 40%), radial-gradient(at 40% 92%, rgb(65, 24, 13) 0px, transparent 10%), radial-gradient(at 0% 86%, hsl(209deg, 100%, 20%) 0px, transparent 50%), radial-gradient(at 19% 12%, hsl(191deg, 100%, 62%) 0px, transparent 50%), radial-gradient(at 98% 135%, hsl(240deg, 46%, 38%) 0px, transparent 40%), radial-gradient(at 94% 99%, hsl(181deg, 39%, 61%) 0px, transparent 50%), url(https://picsum.photos/g/2000/1200?image=251) center center/cover no-repeat;
   content: " ";
   height: 264px;
   left: 0;
